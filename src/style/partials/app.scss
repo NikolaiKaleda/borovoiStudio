@@ -1,0 +1,146 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url(partials/fonts/Ubuntu-Bold.otf);
+    src: local('☺'),
+    	url('../fonts/Ubuntu-Bold.eot?') format('embedded-opentype'),
+        url('../fonts/Ubuntu-Bold.woff') format('woff'),
+        url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+html {
+    min-height: 100%;
+    .homePage {
+        height: 100%;
+        background-color: $bgColor;
+        -webkit-box-shadow: 0 2px #dd9d00;
+        -moz-box-shadow: 0 2px #dd9d00;
+        box-shadow: 0 2px #dd9d00;
+        border: solid 1px #c8c8c8;
+        background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.14), rgba(255,255,255,.14));
+        background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.14), rgba(255,255,255,.14));
+        background-image: -o-linear-gradient(bottom, rgba(0,0,0,.14), rgba(255,255,255,.14));
+        background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.14), rgba(255,255,255,.14));
+        background-image: linear-gradient(to top, rgba(0,0,0,.14), rgba(255,255,255,.14));
+        .pageBlock {
+            background-color: $bgColor2;
+            max-width: 1010px;
+            margin: 0 auto;
+            .header {
+                .topBlock {
+                    position: relative;
+                    border-bottom: 1px solid #dbddde;
+                    .logotype {
+                        display: flex;
+                        padding: 25px 0 23px 38px;
+                        .logoImg {
+                            display: inline-block;
+                            margin-right: 13px;
+                            img {
+                                width: 65px;
+                            }
+                        }
+                        .logoText {
+                            display: inline-block;
+                            .logoTitle {
+                                @include input-font($boldFont, 24px, $mainColor, 0, bold);
+                                @include marginPaddingReset;
+                                margin-top: 13px;
+                            }
+                            .logoSubtitle {
+                                @include input-font(Arial, 12px, #6f6f6f, 0, regular);
+                                @include marginPaddingReset;
+                                margin-top: 4px;
+                            }
+                        }
+                    }
+                    .search {
+                        position: absolute;
+                        right: 0;
+                        top: 45px;
+                        .input-group {
+                            width: 278px;
+                            input {
+                                width: 241px;
+                                height: 25px;
+                                background-image: url(../img/homePage/header/search/placeholder.png);
+                                background-repeat: no-repeat;
+                                background-position: 215px;
+                                -webkit-border-radius: 3px;
+                                -moz-border-radius: 3px;
+                                border-radius: 3px;
+                                background-color: #fff;
+                                border: solid 1px #e5e5e5;
+                            }
+                            input:focus {
+                                background: none;
+                            }
+                            span {
+                                .btn {
+                                    height: 25px;
+                                    border: none;
+                                    padding: 0;
+                                    padding-right: 5px;
+                                    img {
+                                        padding: 0;
+                                        text-align: center;
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .navigation {
+                    float: none;
+                    text-align: center;
+                    height: 43px;
+                    .nav-tabs {
+                        float: none;
+                        display: inline-block;
+                        border: none;
+                        .active {
+                            margin: 0;
+                            a {
+                                color: white;
+                                border: none;
+                                background-color: $activeBtnColor;
+                                border-radius: 0;
+                            }
+                        }
+                        li {
+                            a {
+                                @include input-font(Arial, 15px, $menuColor, 0, bold);
+                                height: 100%;
+                                padding-right: 24px;
+                                padding-left: 24px;
+                                margin: 0;
+                                border: none;
+                            }
+                            a:hover {
+                                background-color: $mainColor;
+                                -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+                                -moz-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+                                box-shadow: 0 1px 1px rgba(0,0,0,.3);
+                                border: none;
+                                border-radius: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
