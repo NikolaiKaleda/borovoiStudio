@@ -1,21 +1,5 @@
 /*----- MIXINS -----*/
 
-@mixin input-position($top, $left) {
-    position: absolute;
-    top: $top;
-    left: $left;
-}
-
-
-
-
-
-
-
-
-
-
-
 @mixin marginPaddingReset {
     margin: 0;
     padding: 0;
@@ -28,3 +12,6 @@
     letter-spacing: $spacing;
 	font-weight: $weight;
 }
+
+
+

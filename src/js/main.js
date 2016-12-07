@@ -9,7 +9,8 @@
  */
 //= partials/app.js
 //= partials/bootstrap.min.js
-//= partials/bigSlide.js
+//= partials/slick.js
+
 
 
 

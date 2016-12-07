@@ -2,42 +2,7 @@
 @import 'mixins.scss';
 
 
-@font-face {
-    font-family: Ubuntu-Bold;
-    src: url(partials/fonts/Ubuntu-Bold.otf);
-    src: local('☺'),
-    	url('../fonts/Ubuntu-Bold.eot?') format('embedded-opentype'),
-        url('../fonts/Ubuntu-Bold.woff') format('woff'),
-        url('../fonts/Ubuntu-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Roboto-Bold;
-    src: url(partials/fonts/Roboto-Bold.otf);
-    src: local('☺'),
-    	url('../fonts/Roboto-Bold.eot?') format('embedded-opentype'),
-        url('../fonts/Roboto-Bold.woff') format('woff'),
-        url('../fonts/Roboto-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: VAGRound;
-    src: url(partials/fonts/VAGRound.otf);
-    src: local('☺'),
-    	url('../fonts/VAGRound.eot?') format('embedded-opentype'),
-        url('../fonts/VAGRound.woff') format('woff'),
-        url('../fonts/VAGRound.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-
+@media only screen and (min-width:1280px) {
 html {
     min-height: 100%;
     .homePage {
@@ -175,9 +140,6 @@ html {
             //----- SLIDER -----
             
             .topSlider {
-                .slider {
-                    display: block;
-                }
                 .slider, .mobileBg {
                     margin-bottom: 0px;
                     .slideItem1, .slideItem2, .slideItem3, .slideItem4, .slideItem5, .slideItem {
@@ -246,9 +208,6 @@ html {
                         }
                     }
                 }
-                .mobileBg {
-                    display: none;
-                }
             }
             
             //----- End slider -----
@@ -310,6 +269,314 @@ html {
         }
     }
 }
+}
+
+
+@media only screen and (max-width:1279px) {
+html {
+    .homePage {
+        .pageBlock {
+            
+            //----- SLIDER -----
+            
+            .topSlider {
+                .slider, .mobileBg {
+                    .slideItem1, .slideItem2, .slideItem3, .slideItem4, .slideItem5, .slideItem {
+                        .slideContent {
+                            .competence {
+                                font-size: 15px;
+                            }
+                            .slideTitle {
+                                font-size: 55px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            //----- End slider -----
+            
+            
+            //----- SERVICES -----
+            
+            .services {
+                .row {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+            
+            //----- End services -----
+            
+        }
+    }
+}
+}
+
+
+@media only screen and (max-width:1023px) {
+html {
+    .homePage {
+        .pageBlock {
+            
+            
+            //----- HEADER -----
+            
+            .header {
+                .topBlock {
+                    .logotype {
+                        .logoText {
+                            .logoTitle {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                    .search {
+                        .input-group {
+                            width: 225px;
+                            input {
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+                .navigation {
+                    .nav-tabs {
+                        li {
+                            a {
+                                font-size: 13px;
+                                padding-right: 15px;
+                                padding-left: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            //----- End header -----
+            
+            
+            //----- SLIDER -----
+            
+            .topSlider {
+                .slider, .mobileBg {
+                    .slideItem1, .slideItem2, .slideItem3, .slideItem4, .slideItem5, .slideItem {
+                        min-height: 430px;
+                        .slideContent {
+                            margin-left: 95px;
+                            .competence {
+                                font-size: 14px;
+                                margin-top: 50px;
+                            }
+                            .slideTitle {
+                                font-size: 50px;
+                                line-height: 46px;
+                            }
+                            .slideText {
+                                max-width: 480px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            //----- End slider -----
+            
+            
+            //----- SERVICES -----
+            
+            .services {
+                .row {
+                    .btn-group-justified {
+                        .btn-group {
+                            padding-top: 40px;
+                            padding-bottom: 35px;
+                            .menuLink {
+                                .serviceItem {
+                                    padding-right: 5px;
+                                    padding-left: 5px;
+                                    .serviceImg {
+                                        height: 33px;
+                                        max-width: 30px;
+                                        margin-right: 5px;
+                                    }
+                                    .serviceName {
+                                        max-width: 90px;
+                                        font-size: 11px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            //----- End services -----
+
+            
+            //----- NEW BLOCK -----
+            
+            .newBlock {
+                height: 120px;
+            }
+            
+            //----- End new block -----
+        }
+    }
+}
+}
+
+
+@media only screen and (max-width:768px) {
+body {
+    font-size: 1vw;
+}
+html {
+    .homePage {
+        .pageBlock {
+            
+            //----- HEADER -----
+            
+            .header {
+                .topBlock {
+                    .logotype {
+                        display: block;
+                        padding: 5em 0 5em 10em;
+                        .logoImg {
+                            margin-right: 5em;
+                            img {
+                                width: 18em;
+                            }
+                        }
+                        .logoText {
+                            .logoTitle {
+                                font-size: 6em;
+                                margin: 0;
+                            }
+                            .logoSubtitle {
+                                font-size: 3.5em;
+                            }
+                        }
+                    }
+                    .search {
+                        position: initial;
+                        .input-group {
+                            margin: 0 auto 2em;
+                            width: 80em;
+                            input {
+                                width: 17em;
+                            }
+                        }
+                    }
+                }
+                .navigation {
+                    float: none;
+                    text-align: center;
+                    height: auto;
+                    .nav-tabs {
+                        height: 100%;
+                        float: none;
+                        li {
+                            display: block;
+                            width: 100%;
+                            a {
+                                font-size: 4em;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            //----- End header -----
+            
+            
+            //----- SLIDER -----
+            
+            .topSlider {
+                .slider, .mobileBg {
+                    display: none;
+                }
+                .slider, .mobileBg {
+                    .slideItem {
+                        min-height: 10em;
+                        .slideContent {
+                            margin-left: 1em;
+                            text-align: center;
+                            .competence {
+                                font-size: 4em;
+                                margin-top: 3em;
+                                margin-bottom: 1em;
+                            }
+                            .slideTitle {
+                                font-size: 10em;
+                                line-height: 1em;
+                            }
+                            .slideText {
+                                font-size: 4em;
+                                max-width: 23em;
+                                margin: 2em 0 0 0;
+                                padding-bottom: 5em;
+                            }
+                        }
+                    }
+                }
+                .mobileBg {
+                    display: block;
+                }
+            }
+            
+            //----- End slider -----
+            
+            
+            //----- SERVICES -----
+            
+            .services {
+                .row {
+                    .btn-group-justified {
+                        display: block;
+                        overflow: hidden;
+                        .btn-group {
+                            padding-top: 3em;
+                            padding-bottom: 2em;
+                            display: block;
+                            width: 100%;
+                            text-align: center;
+                            .menuLink {
+                                .serviceItem {
+                                    padding: 0;
+                                    .serviceImg {
+                                        height: 10em;
+                                        max-width: 10em;
+                                        margin-right: 4em;
+                                    }
+                                    .serviceName {
+                                        font-size: 3.5em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            //----- End services -----
+
+        }
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
